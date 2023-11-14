@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+
+    
+    <h2>ลงทะเบียนสมัครสมาชิกห้องสมุด</h2>
+
+    <form action="/action_page.php">
+
+    <!--ชื่อ-นามสกุล-->
+    <label for="fname-T">ชื่อ : </label>
+    <input type="text" id="fname-T" name="fname-T"><br><br>
+
+    <label for="lname-T">นามสกุล : </label>
+    <input type="text" id="lname-T" name="lname-T"><br><br>
+
+    <label for="fname">First name : </label>
+    <input type="text" id="fname" name="fname"><br><br>
+
+    <label for="lname">Last name : </label>
+    <input type="text" id="lname" name="lname"><br><br>
+
+    <!--เพศ-->
+    <label for="sex">เพศ : </label>
+    <input type="radio" id="male" name="fav_language" value="male">
+      <label for="male">ชาย</label>
+      <input type="radio" id="female" name="fav_language" value="female">
+      <label for="female">หญิง</label>
+      <input type="radio" id="none-specified" name="fav_language" value="none-specified">
+      <label for="none-specified">ไม่ระบุ</label><br><br>
+
+    <!--รหัสนักศึกษา-->
+    <label for="Number">รหัสนักศึกษา : </label>
+    <input type="text" id="Number" name="Number" ><br><br>
+
+    <!--คณะ-->
+    <label for="Faculty">คณะที่ศึกษา : </label>
+    <input type="text" id="Faculty" name="Faculty"><br><br>
+
+    <!--สาขา-->
+    <label for="study">สาขาที่ศึกษา : </label>
+    <input type="text" id="study" name="study"><br><br>
+
+    <!--อีเมล-->
+    <label for="E-mail">ที่อยู่อีเมล : </label>
+    <input type="email" id="E-mail" name="E-mail"><br><br>
+
+    <!--วันเกิด-->
+    <label for="date">วัน-เดือน-ปีเกิด</label><br>
+    <input type="date" id="date" name="date"><br><br>
+
+    <!--บัตรประชาชน-->
+    <label for="IdCard">รูปบัตรประชาชน</label><br>
+    <input type="file" id="IdCard" name="IdCard"><br><br>
+
+    <label for="comment">ข้อเสนอเเนะ</label><br>
+    <textarea name="comment" id="comment" cols="" rows=""></textarea><br><br>
+
+    <!--submit-->
+    <input type="submit" value="Submit">
+  
+</form> 
+
+</body>
+</html>
