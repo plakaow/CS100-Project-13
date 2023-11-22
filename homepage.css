@@ -112,24 +112,53 @@ footer{
     background-color: brown;
     padding: 10px;
 }
-.main_about_us
+.main_about_kaow
 {
     width: 100%;
     height: auto;
     background-color: coral;
     display: flex;
     flex-direction: row;
+    margin: 5px 5px 5px 5px;
 }
-.about_us_img
+.about_kaow_img
 {
     width: 100%;
     height: 400px;
     background-image: url(img/test_img.jpg);
     background-size: cover;
-    background-position: 0%;
+    background-position: 50%;
 }
-.about_us_txt
+.about_kaow_txt
 {
     width: 100%;
     height: auto;
+    margin-left: 20px;
+}
+.main_about_cher
+{
+    width: 100%;
+    height: auto;
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+    margin: 5px 5px 5px 5px;
+}
+.about_cher_img
+{
+    width: 100%;
+    height: 400px;
+    background-image: url(img/test_img.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+.about_cher_txt
+{
+    width: 100%;
+    height: auto;
+    margin-left: 20px;
+}
+.about_cher_txt p
+{
+    color: black;
 }
