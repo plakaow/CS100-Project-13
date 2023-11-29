@@ -154,8 +154,8 @@ footer{
 {
     width: 100%;
     height: 400px;
-    background-image: url(img/test_img.jpg);
-    background-size: cover;
+    background-image: url(img/chertam_test.jpg);
+    background-size: contain;
     background-position: 50%;
 }
 .about_cher_txt
