@@ -43,9 +43,10 @@ ul li{
     background-image: url('img/test_img.jpg');
     background-size: cover;
     background-position: 0;
-    height: 565px;
+    height: 745px;
     display: flex;
     flex-direction: row;
+    margin-bottom: 150px;
 }
 
 .left_side{
@@ -91,6 +92,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 150px;
 }
 .main_footer_box{
     width: 90%;
@@ -101,7 +103,7 @@ footer{
     align-items: center;
 }
 .mini_footer_box{
-    width: 100%;
+    width: 50%;
     height: 100%;
     background-color: blueviolet;
     display: flex;
