@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+}
+.main_box{
+    width: 100%;
+    height: 100vh;
+}
+.mini_box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.left_img{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left_img img{
+    width: 100%;
+    height: 48vh;
+    padding: 15px;
+}
+.right_text{
+    width: 55%;
+    height: 100vh;
+}
+.FnameLname{
+    width: 100%;
+    height: 33%;
+}
+.FnameLname p{
+    font-size: 120px;
+    margin-left: 50px;
+    padding-top: 32px;
+}
+.text_form{
+    width: 100%;
+    height: 67%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 50px;
+}
+
+.studen_id{
+    margin-left: 50px;
+}
+
+.last_line{
+    padding: 0 50px 0 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+@media only screen and (max-width: 750px) and (min-width:350px){
+    .mini_box{
+        display: flex;
+        flex-direction: column;
+    }
+    .left_img{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .left_img img{
+        height: 100%;
+    }
+    .right_text{
+        width: 100%;
+        height: 100vh;
+    }
+    .FnameLname{
+        height: 66%;
+    }
+    .FnameLname p{
+        width: 100%;
+        font-size: 60px;
+        margin-left: 0;
+        margin: 15px;
+        padding-top: 10px;
+    }
+    .text_form{
+        font-size: 14px;
+        padding-bottom: 15px;
+    }
+    .studen_id{
+        margin-left: 15px;
+    }
+    .last_line{
+        padding: 0 15px 0 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    .date{
+        margin-top: 15px;
+        display: flex;
+        justify-content: end;
+    }
+}
