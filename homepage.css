@@ -50,7 +50,7 @@ ul li{
     height: 745px;
     display: flex;
     flex-direction: row;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 .left_side{
     width: 50%;
@@ -89,7 +89,7 @@ ul li{
 }
 
 footer{
-    background-color: aqua;
+    /*background-color: aqua;*/
     width: 100%;
     height: 200px;
     display: flex;
@@ -100,7 +100,7 @@ footer{
 .main_footer_box{
     width: 90%;
     height: 100%;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +108,7 @@ footer{
 .mini_footer_box{
     width: 100%;
     height: 100%;
-    background-color: blueviolet;
+    /*background-color: blueviolet;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
