@@ -63,7 +63,40 @@ body{
     flex-direction: row;
     justify-content: space-between;
 }
-
+.WorkAct{
+    width: 100%;
+}
+.WorkAct_box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.left_main{
+    width: 70%;
+    height: 100vh;
+}
+.headText{
+    height: 40%;
+}
+.headText p{
+    font-size: 120px;
+}
+.img_with_text{
+    height: 60%;
+    padding-bottom: 30px;
+}
+.img_with_text img{
+    width: 100%;
+    height: 100%;
+}
+.right_main{
+    margin-top: 33vh;
+    margin-left: 40px;
+    font-size: 18px;
+}
+.typeWork{
+    margin-bottom: 40px;
+}
 
 @media only screen and (max-width: 750px) and (min-width:350px){
     .mini_box{
@@ -94,6 +127,7 @@ body{
     .text_form{
         font-size: 14px;
         padding-bottom: 15px;
+        height: 25%;
     }
     .studen_id{
         margin-left: 15px;
@@ -107,5 +141,30 @@ body{
         margin-top: 15px;
         display: flex;
         justify-content: end;
+    }
+    .WorkAct_box{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .left_main{
+        width: 100%;
+        height: 50vh;
+    }
+    .headText{
+        height: 33%;
+    }
+    .headText p{
+        font-size: 45px;
+    }
+    .img_with_text{
+        height: 66%;
+        padding-bottom: 0;
+    }
+    .right_main{
+        margin-top: 10px;
+        margin-left: 0;
+        font-size: 18px;
+        margin-bottom: 50px;
     }
 }
