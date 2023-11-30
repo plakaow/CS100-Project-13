@@ -97,6 +97,33 @@ body{
 .typeWork{
     margin-bottom: 40px;
 }
+.WorkAct_second_box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.left_second{
+    width: 50%;
+    margin: 15px;
+}
+.right_second{
+    width: 50%;
+    margin: 15px;
+}
+.img_second img{
+    width: 95%;
+}
+.left_second .text_second{
+    margin-top: 10px;
+}
+.right_second .text_second{
+    margin-bottom: 25px;
+}
+.text_second h1{
+    font-size: 24px;
+    margin-bottom: 25px;
+}
 
 @media only screen and (max-width: 750px) and (min-width:350px){
     .mini_box{
@@ -166,5 +193,21 @@ body{
         margin-left: 0;
         font-size: 18px;
         margin-bottom: 50px;
+    }
+    .WorkAct_second_box{
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 15px;
+    }
+    .left_second{
+        width: 100%;
+        margin: 0px;
+    }
+    .right_second{
+        width: 100%;
+        margin: 0px;
+    }
+    .right_second .text_second{
+        margin: 10px 0 25px 0;
     }
 }
