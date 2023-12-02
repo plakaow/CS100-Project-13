@@ -5,10 +5,14 @@
     color: white;
     text-decoration: none;
 }
+@font-face {
+    font-family: 'Manum';
+    src: url('ManumThin.ttf') format('truetype');
+}
 body
 {
     background-color: aliceblue;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Manum';
 }
 nav{
     width: 100%;
@@ -180,7 +184,6 @@ footer{
     color: black;
     margin-left: 30px;
     margin-right: 40px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: large;
 }
 
@@ -244,15 +247,16 @@ footer{
     }
     .right_side .text_box{
         width: 75%;
-        font-size: 12px;
-        margin-bottom: 100px;
+        font-size: 10px;
+        margin-bottom: 50px;
         margin-left: 50px;
     }
     
     .left_side .text_box{
         width: 75%;
-        font-size: 12px;
-        margin-bottom: 100px;
+        font-size: 10px;
+        margin-left: 20px;
+        margin-bottom: 50px;
         margin-right: 50px;
     }
     .about_kaow_img
@@ -294,8 +298,8 @@ footer{
     color: black;
     margin-left: 10px;
     margin-right: 10px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: smaller;
+    font-family:;
+    font-size: 12px;
 }
     footer{
         /*background-color: aqua;*/
@@ -323,10 +327,10 @@ footer{
         align-items: center;
     }
     .mini_footer_box h1{
-        font-size: 24px;
+        font-size: 18px;
     }
     .mini_footer_box p{
-        font-size: 18px;
+        font-size: 12px;
     }
     .footer_content{
         background-color: brown;
