@@ -7,71 +7,159 @@
     <link rel="stylesheet" href="test.css">
 </head>
 <body>
-    <div class="main_box">
-        <div class="mini_box">
-            <div class="left_img">
-                <img src="../img/img.jpg" alt="">
-                <img src="../img/img.jpg" alt="">
+
+
+    <div class="teacher" id="teacher">
+        <!-- Form Container -->
+        <div class="form-container">
+          <h1>CSTU Passport</h1>
+          <!-- Main Form -->
+          <form id="myForm" action="#" method="post">
+            <!-- Firstname and Lastname Field -->
+            <div class="form-group">
+              <label for="fullname">Firstname and Lastname <span class="required">*</span></label>
+              <input type="text" id="fullname" name="fullname" required />
+              <small>Only enter your first name and last name, middle name is not necessary.</small>
             </div>
-            <div class="right_text">
-                <div class="FnameLname"><p>FirstName LastName</p></div>
-                <div class="text_form">
-                    <div class="studen_id"><p>0000000000</p></div>
-                    <div class="last_line">
-                        <div class="email"><p>Studen.id@dome.tu.ac.th</p></div>
-                        <div class="date"><p>Date xx,xx,xxxx - Date xx,xx,xxxx</p></div>
+    
+            <!-- Student ID Field -->
+            <div class="form-group">
+              <label for="studentID">Student ID <span class="required">*</span></label>
+              <input type="text" id="studentID" name="studentID" required />
+              <small>Please enter your 10-digit student ID.</small>
+            </div>
+    
+            <!-- University Email Field -->
+            <div class="form-group">
+              <label for="email">University Email <span class="required">*</span></label>
+              <input type="email" id="email" name="email" required />
+              <small>Please provide your university email in the format "xxx.yyy@dome.tu.ac.th".</small>
+            </div>
+    
+            <!-- Work/Activity Title Field -->
+            <div class="form-group">
+              <label for="workTitle">Work/Activity Title <span class="required">*</span></label>
+              <input type="text" id="workTitle" name="workTitle" required />
+            </div>
+    
+            <!-- Type of Work/Activity Field -->
+            <div class="form-group">
+              <label for="activityType">Type of Work/Activity <span class="required">*</span></label>
+              <select id="activityType" name="activityType" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="Course">Course</option>
+                <option value="Activity">Activity</option>
+                <option value="Work">Work</option>
+                <option value="Research">Research</option>
+                <option value="Sports">Sports</option>
+                <option value="Competition">Competition</option>
+                <option value="Computer Science">Computer Science</option>
+              </select>
+            </div>
+    
+            <!-- Start Date/Time Field -->
+            <div class="form-group">
+              <label for="startDate">Start Date/Time <span class="required">*</span></label>
+              <input type="datetime-local" id="startDate" name="startDate" required />
+            </div>
+    
+            <!-- End Date/Time Field -->
+            <div class="form-group">
+              <label for="endDate">End Date/Time <span class="required">*</span></label>
+              <input type="datetime-local" id="endDate" name="endDate" required />
+            </div>
+    
+            <!-- Location Field -->
+            <div class="form-group">
+              <label for="location">Location <span class="required">*</span></label>
+              <input type="text" id="location" name="location" required />
+            </div>
+    
+            <!-- Description Field -->
+            <div class="form-group">
+              <label for="description">Description <span class="required">*</span></label>
+              <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
+    
+            <!-- Submit Button -->
+            <div class="form-group">
+              <input type="submit" value="Submit"id = "button"onclick="testResults()"/>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="main"id = "main">
+        <div class="main_box">
+            <div class="mini_box">
+                <div class="left_img">
+                    <div class="img_1" id="img_1"><img src="../img/img.jpg" alt=""></div>
+                    <div class="img_2" id="img_2"><img src="../img/img.jpg" alt=""></div>
                 </div>
+                <div class="right_text">
+                    <div class="FnameLname" id="FnameLname"><p>FirstName LastName</p></div>
+                    <div class="text_form">
+                        <div class="studen_id" id="studen_id"><p>0000000000</p></div>
+                        <div class="last_line">
+                            <div class="email" id="S-email"><p>Studen.id@dome.tu.ac.th</p></div>
+                            <div class="date" id="date"><p></p></div>
+                            <p> - </p>
+                            <div id="dateEnd"><p></p></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="WorkAct">
+            <div class="WorkAct_box">
+                <div class="left_main">
+                    <div class="headText" id="workActTitle">
+                        <p>WORK/ACTIVITY TITLE</p>
+                    </div>
+                    <div class="img_with_text">
+                        <img src="../img/img.jpg" alt="">
+                    </div>
+                </div>
+                <div class="right_main">
+                    <div class="typeWork"id = "typeWork">
+                        <p>TYPE OF WORK/ACTIVITY</p>
+                    </div>
+                    <div class="academicYear">
+                        <p>Academic Year :</p>
+                    </div>
+                    <div class="Semester">
+                        <p>Semester :</p>
+                    </div>
+                </div>
+            </div>
+            <div class="WorkAct_second_box">
+                <div class="left_second">
+                    <div class="img_second">
+                        <img src="../img/img.jpg" alt="">
+                    </div>
+                    <div class="text_second">
+                        <h1 id="sub_text_1">ACTIVITY</h1>
+                        <p>- xxxxxxxxxx</p>
+                        <p>- xxxxxxxxxx</p>
+                        <p>- xxxxxxxxxx</p>
+                    </div>
+                </div>
+                <div class="right_second">
+                    <div class="text_second">
+                        <h1 id="sub_text_2">ACTIVITY</h1>
+                        <p>- xxxxxxxxxx</p>
+                        <p>- xxxxxxxxxx</p>
+                        <p>- xxxxxxxxxx</p>
+                    </div>
+                    <div class="img_second">
+                        <img src="../img/img.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="WorkAct">
-        <div class="WorkAct_box">
-            <div class="left_main">
-                <div class="headText">
-                    <p>WORK/ACTIVITY TITLE</p>
-                </div>
-                <div class="img_with_text">
-                    <img src="../img/img.jpg" alt="">
-                </div>
-            </div>
-            <div class="right_main">
-                <div class="typeWork">
-                    <p>TYPE OF WORK/ACTIVITY</p>
-                </div>
-                <div class="academicYear">
-                    <p>Academic Year :</p>
-                </div>
-                <div class="Semester">
-                    <p>Semester :</p>
-                </div>
-            </div>
-        </div>
-        <div class="WorkAct_second_box">
-            <div class="left_second">
-                <div class="img_second">
-                    <img src="../img/img.jpg" alt="">
-                </div>
-                <div class="text_second">
-                    <h1>ACTIVITY</h1>
-                    <p>- xxxxxxxxxx</p>
-                    <p>- xxxxxxxxxx</p>
-                    <p>- xxxxxxxxxx</p>
-                </div>
-            </div>
-            <div class="right_second">
-                <div class="text_second">
-                    <h1>ACTIVITY</h1>
-                    <p>- xxxxxxxxxx</p>
-                    <p>- xxxxxxxxxx</p>
-                    <p>- xxxxxxxxxx</p>
-                </div>
-                <div class="img_second">
-                    <img src="../img/img.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
+
+    <script src="script.js"></script>
     
 </body>
 </html>
