@@ -238,7 +238,7 @@ body{
     }
     .FnameLname p{
         width: 100%;
-        font-size: 60px;
+        font-size: 32px;
         margin-left: 0;
         margin: 15px;
         padding-top: 10px;
@@ -260,6 +260,14 @@ body{
         margin-top: 15px;
         display: flex;
         justify-content: end;
+        margin-left: 0;
+    }
+    .dateEnd{
+        display: flex;
+        justify-content: end;
+    }
+    .nothing{
+        display: none;
     }
     .WorkAct_box{
         padding-top: 20px;
