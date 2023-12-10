@@ -20,10 +20,10 @@ sudo npm install pm2 -g
 cd /home/ec2-user
 
 # Clone the repository
-git clone https://github.com/plakaow/git_with_team.git
+git clone https://github.com/plakaow/CS100-Project-13.git
 
 # Navigate to the project directory and install dependencies
-cd git_with_team/Backend
+cd CS100-Project-13/Backend
 sudo npm install
 
 # Start the application using pm2
@@ -41,12 +41,12 @@ sudo yum install -y nginx
 sudo systemctl start nginx
 sudo systemctl enable nginx
 
-sudo cp -r /home/ec2-user/git_with_team/activity /usr/share/nginx/html/
-sudo cp /home/ec2-user/git_with_team/homepage.css /usr/share/nginx/html/
-sudo cp /home/ec2-user/git_with_team/homepage.js /usr/share/nginx/html/
-sudo cp /home/ec2-user/git_with_team/index.html /usr/share/nginx/html/
-sudo cp /home/ec2-user/git_with_team/ManumThin.ttf /usr/share/nginx/html/
-sudo cp -r /home/ec2-user/git_with_team/img /usr/share/nginx/html/
+sudo cp -r /home/ec2-user/CS100-Project-13/activity /usr/share/nginx/html/
+sudo cp /home/ec2-user/CS100-Project-13/homepage.css /usr/share/nginx/html/
+sudo cp /home/ec2-user/CS100-Project-13/homepage.js /usr/share/nginx/html/
+sudo cp /home/ec2-user/CS100-Project-13/index.html /usr/share/nginx/html/
+sudo cp /home/ec2-user/CS100-Project-13/ManumThin.ttf /usr/share/nginx/html/
+sudo cp -r /home/ec2-user/CS100-Project-13/img /usr/share/nginx/html/
 
 # Restart Nginx to reflect the changes
 sudo systemctl restart nginx
